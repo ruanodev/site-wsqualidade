@@ -20,3 +20,4 @@ window.addEventListener("scroll", function() {
         document.querySelector("#navbar").style.opacity = 1;
     }
 });
+

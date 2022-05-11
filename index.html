@@ -15,11 +15,9 @@
             <h1 class="logo">WS Gestão da Qualidade</h1>
             <ul id="navbar-items">
                 <li><a href="#showcase">Inicio</a></li>
-                <li><a href="#clients">Sobre</a></li>
+                <li><a href="#features">Sobre</a></li>
                 <li><a href="#features-servicos">Serviços</a></li>
-                <li><a href="#gallery">Galeria</a></li>
-                <li><a href="#contact">Contato</a></li>
-                
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </div>
     </nav>
@@ -27,9 +25,10 @@
         <div id="showcase-container">
             <h2> Seja bem vindo!</h2>
             <p> A mais de 20 anos no mercado, somos especialistas em Normas e Sistemas de Gestão da Qualidade.</p>
-            <a href="" class="btn">Saiba mais</a>
+            <a href="#features-servicos" class="btn">Saiba mais</a>
         </div>
     </header>
+    
 <!-- SERVIÇOS-->
 
 <section id="features-servicos">
@@ -117,60 +116,37 @@
 
 </section>
 
-<!-- Product-->
-<section id="product">
-    <div class="headline">Nosso produto</div>
-    <div id="product-container">
-        <img src="" alt="" class="iphone-x">
+<!-- Contato -->
+<section id="contato">
+    <div class="headline">WS Contatos</div>
+    <div id="contato-container">
+        <img src="./imagens/contato.png" alt="" class="imagem-contato">
         <div id="items">
+                <div class="item">
+                <i class="fa-brands fa-whatsapp fa-2x"></i>
+                <a href="https://api.whatsapp.com/send?phone=5511973374617"><p class="style-contato">Whatsapp WS</p></a>
+                <p>- Wilier Sciaca</p>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-envelope fa-2x"></i>
+                <p>wilier@wsqualidade.com.br</p>
+            </div>
+            <div class="item">
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+                <a href="https://gh.linkedin.com/company/wsqualidade"><p>Linkedin WS</p></a>    
+            </div>
             <div class="item">
                 <i class="fas fa-map-marked fa-2x color-primary"></i>
-                <p>testando ... texto ..texto texto texto texo texto texto</p>
-            </div>
-            <div class="item">
-                <i class="fas fa-users fa-2x color-primary"></i>
-                <p>testando ... texto ..texto texto texto texo texto texto</p>
-            </div>
-            <div class="item">
-                <i class="fas fa-glass-cheers fa-2x color-primary"></i>
-                <p>testando ... texto ..texto texto texto texo texto texto</p>
-            </div>
-            <div class="item">
-                <i class="fas fa-book-open fa-2x"></i>
-                <p>testando ... texto ..texto texto texto texo texto texto</p>
+                <p> Estamos localizados em São Paulo, com atendimento em todo Brasil.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Gallery -->
-
-<section id="gallery">
-    <div class="headline">Galeria</div>
-    <div id="gallery-container">
-        <img src="" alt="" class="gallery-image">
-        <img src="" alt="" class="gallery-image">
-        <img src="" alt="" class="gallery-image">
-        <img src="" alt="" class="gallery-image">
-        <img src="" alt="" class="gallery-image">
-        <img src="" alt="" class="gallery-image">
-        
-    </div>
-</section>
-
-<!-- About -->
-
-<section id="clients">
-    <div class="headline">Nossos clientes</div>
-    <div id="clients-container"></div>
-    <img src="" alt="" class="client">
-    <img src="" alt="" class="client">
-    <img src="" alt="" class="client">
-</section>
 
 <footer id="footer">
     <p>Copyright 2022 - Todos direitos reservados </p>
-    <p>Desenvolvido por Israel Ruano</p>
+    <p>Desenvolvido por <a href="https://www.linkedin.com/in/israelruanotavares/">Israel Ruano</p></a>
 </footer>
     <!-- Fonte -->
     <script src="https://kit.fontawesome.com/beb4d69b23.js" crossorigin="anonymous"></script>
@@ -178,6 +154,12 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Import JS File-->
     <script src="js/main.js"></script>
+
+<!--Código Whatsapp-->
+    <a href="https://api.whatsapp.com/send?phone=5511973374617&text=Olá WS !!"
+    target="_blank" style="position:fixed;bottom:20px;right:30px;">
+    <svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg>
+    </a>
 
 </body>
 </html>

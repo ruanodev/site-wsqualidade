@@ -9,6 +9,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 a {
@@ -35,12 +37,14 @@ a {
 }
 
 .headline {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 5px;
     letter-spacing: 2px;
+    padding-top: 50px;
+   
 }
 
 /*Navbar */
@@ -83,7 +87,7 @@ a {
     padding: 10px;
 }
 
-/*Showcase*/
+/*Showcase - Inicio*/
 
 #showcase {
     height: 100vh;
@@ -114,14 +118,16 @@ a {
     
 }
 
-#clients {
+/* clients - contato*/
+
+#contato {
     width: 100%;
     background: #eee;
     color: #111;
     padding: 50px;
 }
 
-#clients-container {
+#contato-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
@@ -129,19 +135,37 @@ a {
 
 }
 
-.client {
+.contato {
     display: inline-block;
     width: 25%;
 }
 
-/* About */
+#navbar-items li:hover {
+    /*cursor: pointer;
+    background: #aaa;
+    color: #eee;*/
+    border-radius: 5px;
+    animation: pulsate 1.0s ease-in-out;
+}
+
+@keyframes pulsate {
+    0% {
+        box-shadow:
+        0 0 25px #5ddcff;
+        
+    }
+
+}
+
+/* Nosso Diferencial - Sobre - Features */
+
 #features {
     width: 100%;
-    background: #222;
-    color: #eee;
+    background: #eee;
+    color: #333;
     padding: 50px;
     text-align: justify;
-    
+       
 }
 
 #features-container {
@@ -150,17 +174,17 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 50px;
+    padding-top: 10px;
     
 }
-
 
 .feature {
     display: flex;
     flex-direction: column;
-    background: #333;
+    background-color:lightblue;
     padding: 20px;
     border-radius: 5px;
-    
+        
 }
 
 .feature-title {
@@ -174,11 +198,13 @@ a {
 /*Serviços*/
 
 .feature-servicos {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     background: #eee;
     padding: 20px;
     border-radius: 5px;
+    
     
 }
 
@@ -188,7 +214,7 @@ a {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 0px;
-    
+            
 }
 
 #features-servicos {
@@ -197,24 +223,35 @@ a {
     color: #222;
     padding: 50px;
     text-align: justify;
+    background-color:;
    
 }
 
-/* Product*/
+/* Contato*/
 
-#product {
-    width: 100%;
-    padding: 50px;
+.imagem-contato {
+    width: 10%;
+    height: 5%;
+        
 }
 
-#product-container {
+#contato {
+    width: 100%;
+    padding: 50px;
+    background-color:white;
+    
+}
+
+#contato-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:space-between;
+    align-items:center;
+    
 }
 
 #items {
-    width: 650px;
+    width: 900px;
+    
 }
 
 #items .item {
@@ -222,7 +259,10 @@ a {
     padding: 10px;
     margin: 15px 0;
     font-size: 1.2rem;
+    column-gap: 15px;
+   
 }
+
 
 /* Gallery*/
 
@@ -253,5 +293,4 @@ a {
     color: #eee;
     padding: 30px;
     text-align: center;
-
 }
