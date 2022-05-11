@@ -153,20 +153,51 @@ a {
     
 }
 
+
 .feature {
     display: flex;
     flex-direction: column;
     background: #333;
     padding: 20px;
     border-radius: 5px;
+    
 }
 
 .feature-title {
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 10px;
+    padding: 4px 2px;
+    text-align: left;
     
+}
+
+/*Serviços*/
+
+.feature-servicos {
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+    padding: 20px;
+    border-radius: 5px;
     
+}
+
+#features-container-servicos {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    
+}
+
+#features-servicos {
+    width: 100%;
+    background: #eee;
+    color: #222;
+    padding: 50px;
+    text-align: justify;
+   
 }
 
 /* Product*/
