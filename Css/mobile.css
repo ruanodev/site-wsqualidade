@@ -1,41 +1,42 @@
-#navbar {
-    height: 180px;
+body {
+    font-family: 'Roboto', sans-serif;
     
+    
+}
+
+#navbar {
+    height: 250px;
+        
 }
 
 #navbar-container {
     flex-direction: column;
-    padding: 20px 0;    
-
+    padding: 20px 10;    
+    
 }
 
 #navbar-items {
-    flex-direction: column;
+    justify-content: center;
     text-align: center;
     width: 100%;
+   
 }
 
 #navbar-items li:nth-child(2) {
     border-top: 1px solid #333;
     border-bottom: 1px solid #333;
+    
 }
 
 /* Showcase*/
 #showcase-container {
-    padding: 40px;
+    padding: 0px;
+    height: 80px;
+    padding-top: 30px;
+
 }
 
-/* clients*/
-
-#clients-container {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.client {
-    width: 50%;
-}
-
-/*features*/
+/*features - diferencial*/
 
 #features-container {
     grid-template-columns: 1fr;
@@ -45,19 +46,19 @@
     margin: 15px 0;
 }
 
-/* Product*/
-#product-container {
-    flex-direction: column;
+/* Product - serviços*/
+
+#features-container-servicos {
+    
+    grid-template-columns: 1fr;
+    
 }
 
-#items {
-    width: 90%;
-}
-
-.item {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+#feature-servicos {
+    width: 5px;
+    margin: 1px 0;
+    background-color: aqua;
+  
 }
 
 /* Gallery*/
