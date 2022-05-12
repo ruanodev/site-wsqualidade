@@ -9,8 +9,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    /*overflow-x: hidden;
+    overflow-y: hidden;*/
 }
 
 a {
@@ -87,6 +87,23 @@ a {
     padding: 10px;
 }
 
+#navbar-items li:hover {
+    /*cursor: pointer;
+    background: #aaa;
+    color: #eee;*/
+    border-radius: 5px;
+    animation: pulsate 0.5s ease-in-out;
+}
+
+@keyframes pulsate {
+    0% {
+        box-shadow:
+        0 0 25px #5ddcff;
+        
+    }
+
+}
+
 /*Showcase - Inicio*/
 
 #showcase {
@@ -140,32 +157,18 @@ a {
     width: 25%;
 }
 
-#navbar-items li:hover {
-    /*cursor: pointer;
-    background: #aaa;
-    color: #eee;*/
-    border-radius: 5px;
-    animation: pulsate 1.0s ease-in-out;
-}
-
-@keyframes pulsate {
-    0% {
-        box-shadow:
-        0 0 25px #5ddcff;
-        
-    }
-
-}
 
 /* Nosso Diferencial - Sobre - Features */
 
 #features {
     width: 100%;
-    background: #eee;
+    /*background: #eee;*/
     color: #333;
-    padding: 50px;
+    padding: 75px;
+    padding-top: 40px;
     text-align: justify;
-       
+    background-color: white;
+           
 }
 
 #features-container {
@@ -198,14 +201,13 @@ a {
 /*Serviços*/
 
 .feature-servicos {
-    height: 100vh;
+    height: 74vh;
     display: flex;
     flex-direction: column;
-    background: #eee;
+    /*background: #eee;*/
     padding: 20px;
     border-radius: 5px;
-    
-    
+    background-color: #eee;
 }
 
 #features-container-servicos {
@@ -213,16 +215,18 @@ a {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 0px;
+    grid-column-gap: 2px;
+    
     
 }
 
 #features-servicos {
     width: 100%;
-    background: #eee;
+    background: white;
     color: #222;
     padding: 50px;
     text-align: justify;
+    
      
 }
 
@@ -238,6 +242,7 @@ a {
     width: 100%;
     padding: 50px;
     background-color:white;
+    padding-top: 5px;
     
 }
 
@@ -262,34 +267,12 @@ a {
    
 }
 
-
-/* Gallery*/
-
-#gallery {
-    width: 90%;
-    margin: auto;
-    padding: 50px;
-}
-
-#gallery-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
-    justify-items: center;
-}
-
-.gallery-image {
-    display: inline-block;
-    width: 540px;
-    height: 360px;
-    border-radius: 5px;
-}
-
 /* footer*/
 
 #footer {
     background: #222;
     color: #eee;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
+    font-size: 13px;
 }
