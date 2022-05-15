@@ -40,29 +40,39 @@ body {
 
 #features-container {
     grid-template-columns: 1fr;
+    
 }
 
 #features-container .feature:nth-child(2) {
     margin: 15px 0;
+    
 }
 
 /* Product - serviços*/
 
 #features-container-servicos {
-    
-    grid-template-columns: 1fr;
+    /*grid-template-columns: 1fr;*/
+    display: flex;
+    flex-direction: column;
+    border-radius: 1px black;
     
 }
 
 #feature-servicos {
-    width: 5px;
+    width: 2px;
     margin: 1px 0;
-    background-color: aqua;
-  
 }
 
-/* Gallery*/
-
-#gallery-container {
-    grid-template-columns: 1fr;
+#features-servicos {
+        padding-top: 10px;
+      
+    
 }
+
+/* Contatos*/
+
+.imagem-contato {
+    display: none;    
+}
+
+
