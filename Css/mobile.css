@@ -4,16 +4,21 @@ body {
     
 }
 
+.logotipo {
+    padding-top: 0px;
+    max-width: 40px;
+}
+
 #navbar {
-    height: 250px;
-       
+    height: 100px;
+        
         
 }
 
 #navbar-container {
     display: flex;
     flex-direction: column;
-    padding: 20px 10;
+    /*padding: 20px 10;*/
     
     
 }
@@ -22,13 +27,20 @@ body {
     justify-content: center;
     text-align: center;
     width: 100%;
+    font-size: 0.8rem;
+   
+}
+
+.headline {
+    font-size: 1.0rem;
+   
    
 }
 
 /*cabeçario*/
 
 .logo {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 /* Showcase*/
@@ -52,10 +64,7 @@ body {
     
 }
 
-#features-container .feature:nth-child(2) {
-    margin: 15px 0;
-    
-}
+
 
 /* Product - serviços*/
 
@@ -63,18 +72,26 @@ body {
     /*grid-template-columns: 1fr;*/
     display: flex;
     flex-direction: column;
-    border-radius: 1px black;
+    justify-content: center;
+    
+    
+    background-color: aqua;
     
 }
 
 #feature-servicos {
+    display: flex;
+    flex-direction: column;
     width: 2px;
     margin: 1px 0;
+    background-color: aqua;
 }
 
 #features-servicos {
-        padding-top: 10px;
-      
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    background-color: red;
     
 }
 
